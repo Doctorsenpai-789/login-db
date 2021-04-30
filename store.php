@@ -64,15 +64,23 @@ class MyStore{
 
 
                 if ($total>0){
-                    echo "Welcome ".$user['first_name']."".$user
-                    ['last_name'];
+                    // echo "Welcome ".$user['first_name']."".$user
+                    //  ['last_name'];
+                    
+                    header('location:admin.php');
 
                 }
                 else {
-                    echo "Login failed";
+                   // echo "Login failed";
+                  // echo "<script type='text/javascript'>alert('Log in failed');</script>";
+
                 }
              }
          }
+
+        function logout(){
+            
+        }
 }
 
 $mystore = new MyStore();
